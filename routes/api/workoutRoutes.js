@@ -46,14 +46,6 @@ router.get("/workouts/range", (req, res) => {
       res.json(err);
     });
 });
-router.post("/workouts/range", (req, res) => {
-  Workouts.create({})
-    .then((data) => {
-      res.json(data);
-    })
-    .catch((err) => {
-      res.json(err);
-    });
-});
+
 
 module.exports = router;
